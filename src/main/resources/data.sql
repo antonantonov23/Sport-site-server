@@ -2,7 +2,7 @@ INSERT INTO accounts (full_name, email, password, is_admin) VALUES
   ('Aliko', 'Dangote@gmail.com', '$2a$10$.dxNhFflX5GDGCelz8ASeum47kM2/cm4gOGTSV.xQnRTzv7Ed7VI6',false);
 
 INSERT INTO accounts (full_name, email, password, is_admin) VALUES
-  ('Petko', 'petko@gmail.com', '$2a$10$.dxNhFflX5GDGCelz8ASeum47kM2/cm4gOGTSV.xQnRTzv7Ed7VI6',true);
+  ('Petko', 'petko@gmail.com', '$2y$12$b16IGJl0mbRB535UHzhkxuB5VLjRmu75mIwS.ocY84g5gWGqAw8a2',true);
 
 INSERT INTO sport_categories(name_of_category) VALUES
   ('Football');

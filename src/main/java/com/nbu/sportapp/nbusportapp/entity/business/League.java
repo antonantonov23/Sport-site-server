@@ -20,7 +20,7 @@ public class League extends AbstractPersistable<Long> {
     private String nameOfLeague;
 
     // league promenlivata ot team
-    @OneToMany(targetEntity = Team.class, mappedBy = "league", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(targetEntity = Team.class, mappedBy = "league", fetch = FetchType.LAZY , cascade = CascadeType.ALL)
     @JsonManagedReference
     private Set<Team> teams = new HashSet<>();
 

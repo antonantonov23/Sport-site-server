@@ -24,14 +24,14 @@ public class Team  {
     private String nameOfTeam;
 
     // we will create on-e transient field for leagueId
-    @Column(name="league_id")
+    @Column(name="league_id", insertable=false, updatable=false)
     private Long leagueId;
 
     @Column(name="league_name")
     private String leagueName;
 
     @ManyToOne
-    @JoinColumn(name = "league")
+    // @JoinColumn(name = "league")
     @JsonBackReference
     private League league;
 
