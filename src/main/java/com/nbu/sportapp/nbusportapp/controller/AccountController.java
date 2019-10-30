@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import com.nbu.sportapp.nbusportapp.dao.AccountDAO;
 import com.nbu.sportapp.nbusportapp.entity.account.Account;
 
-@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 @RequestMapping("/sportapp")
 public class AccountController {

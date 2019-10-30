@@ -18,7 +18,7 @@ import com.nbu.sportapp.nbusportapp.entity.account.Account;
 import com.nbu.sportapp.nbusportapp.entity.business.Team;
 import com.nbu.sportapp.nbusportapp.entity.event.BaseEvent;
 
-@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 @RequestMapping("/sportapp")
 public class BaseEventController {

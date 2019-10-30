@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import com.nbu.sportapp.nbusportapp.dao.AccountDAO;
 import com.nbu.sportapp.nbusportapp.entity.account.Account;
 
-@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 @RequestMapping("/sportapp")
 public class LoginController {
@@ -37,9 +37,11 @@ public class LoginController {
 	@PostMapping("/account/registerUserAccount")
 	public ResponseEntity<Account> registerUserAccount(@RequestBody Account jsonAccount) {
 		Account account = new Account();
+		System.out.println(jsonAccount.toString());
 		account.setFullName(jsonAccount.getFullName());
 		account.setPassword(encoder.encode(jsonAccount.getPassword()));
 		account.setEmail(jsonAccount.getEmail());
+		System.out.println("ssssssss");
 		if (!accountExists(jsonAccount)) {
 			this.accountDAO.save(account);
 			return ResponseEntity.ok().body(account);

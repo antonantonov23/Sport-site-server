@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.nbu.sportapp.nbusportapp.dao.CommentDAO;
 
-@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 @RequestMapping("/sportapp")
 public class CommentController {
